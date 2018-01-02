@@ -22,17 +22,17 @@
   <div class="field">
     <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %><br>
   </div>
-  
+
   <div>
     <p>New Tags:</p>
-    <ul>
+    
       <%= f.fields_for :tags, @post.tags.build do |tags_form| %>
-        <li>
+
           <%= tags_form.label :name %>
           <%= tags_form.text_field :name %>
-        </li>
+
         <% end %>
-      </ul>
+
     </div>
 
 
