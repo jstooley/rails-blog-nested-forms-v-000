@@ -28,12 +28,12 @@
   <ul>
     <%= t.fields_for :tags do |tags_form| %>
       <li>
-        <%= addresses_form.label :kind %>
-        <%= addresses_form.text_field :kind %>
- 
-        <%= addresses_form.label :street %>
-        <%= addresses_form.text_field :street %>
-      
+        <%= tags_form.label :name %>
+        <%= tags_form.text_field :name %>
+
+        <%= tags_form.label :street %>
+        <%= tags_form.text_field :street %>
+
       </li>
     <% end %>
   </ul>
