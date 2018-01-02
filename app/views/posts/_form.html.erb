@@ -26,7 +26,7 @@
 
   <p>New Tags:</p>
   <ul>
-    <%= f.fields_for :tags do |tags_form| %>
+    <%= f.fields_for :tags, @posts.tags.build do |tags_form| %>
       <li>
         <%= tags_form.label :name %>
         <%= tags_form.text_field :name %>
